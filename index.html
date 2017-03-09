@@ -1,8 +1,12 @@
 ---
-layout: default
-title: index
+layout: index
 ---
-<div class="blurb">
-	<h1>Hi there, I'm Brian!</h1>
-	<p>This is a test</p>
-</div><!-- /.blurb -->
+
+<ul class="posts">
+  {% for post in site.posts %}
+  <li>
+    <small class="datetime muted" data-time="{{ post.date }}">{{ post.date | date_to_string }} </small>
+    <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+  </li>
+  {% endfor %}
+</ul>

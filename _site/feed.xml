@@ -3,138 +3,241 @@
   <channel>
     <title>Brian Chan's blog</title>
     <description>Brian Chan's blog.</description>
-    <link>https://birdchan.github.io/</link>
-    <atom:link href="https://birdchan.github.io//feed.xml" rel="self" type="application/rss+xml" />
+    <link>http://127.0.0.1:4000/</link>
+    <atom:link href="http://127.0.0.1:4000//feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
-        <title>Scribble, a Jekyll theme</title>
-        <description>&lt;p&gt;I have other themes, checkout (mainly) &lt;a href=&quot;https://github.com/muan/muan.github.com/releases&quot;&gt;this repository&lt;/a&gt; and &lt;a href=&quot;https://github.com/muan/jekyll-wardrobe&quot;&gt;this repository&lt;/a&gt;. &amp;lt;3&lt;/p&gt;
+        <title>Fix Apache2 Upgrading Ubuntu 16</title>
+        <description>&lt;p&gt;title: Fix apache2 after upgrading to ubuntu 16
+link: https://brianchan.us/home/2016/10/16/fix-apache2-upgrading-ubuntu-16/
+author: admin
+description: 
+post_id: 4357
+created: 2016/10/16 16:01:07
+created_gmt: 2016/10/16 23:01:07
+comment_status: open
+post_name: fix-apache2-upgrading-ubuntu-16
+status: publish
+post_type: post&lt;/p&gt;
 
-&lt;hr /&gt;
+&lt;h1 id=&quot;fix-apache2-after-upgrading-to-ubuntu-16&quot;&gt;Fix apache2 after upgrading to ubuntu 16&lt;/h1&gt;
 
-&lt;p&gt;There is no clever design philosophy to talk about, I tried to find something to work with, and ‘scribble’ came to my mind. This theme uses Open Sans powered by Google Web Fonts, and was written in plain HTML, SCSS &amp;amp; CoffeeScript, though .scss &amp;amp; .coffee files wouldn’t be included in the theme. &lt;/p&gt;
-
-&lt;p&gt;The theme is mobile optimised but I did not check browser compatibility. It looks great in Chrome, Safari and Firefox though.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/muan/scribble&quot; target=&quot;_blank&quot; class=&quot;big-button gray&quot;&gt;Get it on GitHub ♥&lt;/a&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&quot;get-started&quot;&gt;Get started&lt;/h3&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/muan/scribble/fork&quot;&gt;Fork the repository&lt;/a&gt;.&lt;/li&gt;
-  &lt;li&gt;Clone the repository to your computer.&lt;br /&gt; &lt;code&gt;git clone https://github.com/username/scribble&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;bundle install&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;If using older versions of Jekyll&lt;/strong&gt;&lt;br /&gt;
-  Build and run jekyll using &lt;code&gt;jekyll --server --auto&lt;/code&gt;.&lt;br /&gt;
-  &lt;strong&gt;If using &lt;a href=&quot;http://blog.parkermoore.de/2013/05/06/jekyll-1-dot-0-released/&quot;&gt;Jekyll 1.0&lt;/a&gt;&lt;/strong&gt;&lt;br /&gt;
-  Build Jekyll using &lt;code&gt;jekyll build&lt;/code&gt;.&lt;br /&gt;
-  Then run Jekyll using &lt;code&gt;jekyll serve --watch&lt;/code&gt;&lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;Go to http://localhost:4000 for your site.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&quot;make-it-yours&quot;&gt;Make it yours&lt;/h3&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;I have extract most user specific information to &lt;code&gt;_config.yml&lt;/code&gt;, you should be able to set up almost everything from it.&lt;/li&gt;
-  &lt;li&gt;Change about.md for blog intro.&lt;/li&gt;
-  &lt;li&gt;For domain settings, see &lt;a href=&quot;https://help.github.com/articles/setting-up-a-custom-domain-with-pages&quot;&gt;the guide from GitHub&lt;/a&gt;.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&quot;options&quot;&gt;Options&lt;/h3&gt;
-
-&lt;p&gt;When writing a post, there are 3 options you can add to the header.&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;disqus: y&lt;/strong&gt;&lt;br /&gt;
-  If disqus is set to ‘y’, at the end of the post there will be a disqus thread, just like this one. To use disqus, you MUST &lt;a href=&quot;http://disqus.com/&quot;&gt;set up your own disqus account&lt;/a&gt;.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;share: y&lt;/strong&gt;&lt;br /&gt;
-  An option for showing tweet and like button under a post.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;date&lt;/strong&gt;: 2013-05-06 18:07:17&lt;br /&gt;
-  Date is not a required header since Jekyll reads the file name for date, this was added in only for the &lt;strong&gt;signoff time&lt;/strong&gt;. (as shown at the end of this post) If you don’t want the signoff time, go into &lt;code&gt;/includes/signoff.html&lt;/code&gt; and remove the &lt;code&gt;&amp;lt;span&amp;gt;&lt;/code&gt;.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/muan/scribble&quot; target=&quot;_blank&quot; class=&quot;big-button gray&quot;&gt;Get it on GitHub ♥&lt;/a&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&quot;the-end&quot;&gt;The end&lt;/h3&gt;
-
-&lt;p&gt;Like it? &lt;a href=&quot;http://twitter.com/muanchiou&quot;&gt;Tell me&lt;/a&gt;.&lt;br /&gt;
-Problem? &lt;a href=&quot;https://github.com/muan/scribble&quot;&gt;Use GitHub Issues&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;After upgrading to ubuntu 16, my wordpress was acting weird. I get errors like &lt;strong&gt;apache2.service - LSB: Apache2 web server Loaded: loaded (/etc/init.d/apache2; bad; vendor preset: enabled) Drop-In: /lib/systemd/system/apache2.service.d └─apache2-systemd.conf Active: failed (Result: exit-code)&lt;/strong&gt;, and &lt;strong&gt;Your PHP installation appears to be missing the MySQL extension which is required by WordPress.&lt;/strong&gt;&lt;/p&gt;
 </description>
-        <pubDate>Mon, 06 May 2013 09:27:31 -0700</pubDate>
-        <link>https://birdchan.github.io//2013/05/06/scribble-the-jekyll-theme/</link>
-        <guid isPermaLink="true">https://birdchan.github.io//2013/05/06/scribble-the-jekyll-theme/</guid>
+        <pubDate>Sun, 16 Oct 2016 00:00:00 -0700</pubDate>
+        <link>http://127.0.0.1:4000//2016/10/16/fix-apache2-upgrading-ubuntu-16/</link>
+        <guid isPermaLink="true">http://127.0.0.1:4000//2016/10/16/fix-apache2-upgrading-ubuntu-16/</guid>
       </item>
     
       <item>
-        <title>Placeholder post</title>
-        <description>&lt;p&gt;I am a placeholder post. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/p&gt;
+        <title>Will Iphone 7 Or 7 Plus Work In China</title>
+        <description>&lt;p&gt;title: Will iphone 7 or 7 plus work in China?
+link: https://brianchan.us/home/2016/09/24/will-iphone-7-or-7-plus-work-in-china/
+author: admin
+description: 
+post_id: 4348
+created: 2016/09/24 16:08:44
+created_gmt: 2016/09/24 23:08:44
+comment_status: open
+post_name: will-iphone-7-or-7-plus-work-in-china
+status: publish
+post_type: post&lt;/p&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;Boom. I am a blockquote.&lt;/p&gt;
+&lt;h1 id=&quot;will-iphone-7-or-7-plus-work-in-china&quot;&gt;Will iphone 7 or 7 plus work in China?&lt;/h1&gt;
 
-  &lt;p&gt;Say something really clever here.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;List with code&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;code&gt;
-  not highlighted
-  multi line
- &lt;/code&gt;
-2. List with code
-&amp;lt;div class=&quot;highlight&quot;&amp;gt;&amp;lt;pre&amp;gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;dom&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;getElementById&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;boom&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;dom&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;/code&gt;&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&lt;/p&gt;
-
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.&lt;/p&gt;
-
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;whaaa&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;I have a friend called Bobobmob.&quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-</description>
-        <pubDate>Mon, 06 May 2013 08:27:31 -0700</pubDate>
-        <link>https://birdchan.github.io//2013/05/06/more-post/</link>
-        <guid isPermaLink="true">https://birdchan.github.io//2013/05/06/more-post/</guid>
-      </item>
-    
-      <item>
-        <title>Hello world!</title>
-        <description>&lt;h1 id=&quot;hello-world&quot;&gt;Hello world!&lt;/h1&gt;
-
-&lt;p&gt;Welcome to WordPress. This is your first post. Edit or delete it, then start blogging!&lt;/p&gt;
+&lt;p&gt;They should.&lt;/p&gt;
 
 &lt;h2 id=&quot;comments&quot;&gt;Comments&lt;/h2&gt;
 
-&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;#2&quot; title=&quot;2007-10-18 17:31:35&quot;&gt;Mr WordPress&lt;/a&gt;:&lt;/strong&gt; Hi, this is a comment.&lt;br /&gt;
-To delete a comment, just log in and view the post’s comments. There you will have the option to edit or delete them.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;#3&quot; title=&quot;2008-02-01 00:11:17&quot;&gt;testing…&lt;/a&gt;:&lt;/strong&gt; this is an empty reply…&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;#4&quot; title=&quot;2008-02-16 23:19:20&quot;&gt;Brian&lt;/a&gt;:&lt;/strong&gt; testing…&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;#397741&quot; title=&quot;2016-10-24 20:49:23&quot;&gt;Roxy&lt;/a&gt;:&lt;/strong&gt; Free knowledge like this doesn’t just help, it promote deymrcaco. Thank you.&lt;/p&gt;
 
 </description>
-        <pubDate>Thu, 18 Oct 2007 10:31:35 -0700</pubDate>
-        <link>https://birdchan.github.io//2007/10/18/hello-world-2/</link>
-        <guid isPermaLink="true">https://birdchan.github.io//2007/10/18/hello-world-2/</guid>
+        <pubDate>Sat, 24 Sep 2016 00:00:00 -0700</pubDate>
+        <link>http://127.0.0.1:4000//2016/09/24/will-iphone-7-or-7-plus-work-in-china/</link>
+        <guid isPermaLink="true">http://127.0.0.1:4000//2016/09/24/will-iphone-7-or-7-plus-work-in-china/</guid>
+      </item>
+    
+      <item>
+        <title>Learned Optimism</title>
+        <description>&lt;p&gt;title: Learned Optimism
+link: https://brianchan.us/home/2016/08/17/learned-optimism/
+author: admin
+description: 
+post_id: 4344
+created: 2016/08/17 08:53:21
+created_gmt: 2016/08/17 15:53:21
+comment_status: open
+post_name: learned-optimism
+status: publish
+post_type: post&lt;/p&gt;
+
+&lt;h1 id=&quot;learned-optimism&quot;&gt;Learned Optimism&lt;/h1&gt;
+
+&lt;p&gt;Reginald Braithwaite &lt;a href=&quot;https://github.com/raganwald/presentations/blob/master/optimism.md&quot;&gt;talked&lt;/a&gt; about a book called “Learned Optimism,” by Dr. Martin Seligman. Sounds interesting.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 17 Aug 2016 00:00:00 -0700</pubDate>
+        <link>http://127.0.0.1:4000//2016/08/17/learned-optimism/</link>
+        <guid isPermaLink="true">http://127.0.0.1:4000//2016/08/17/learned-optimism/</guid>
+      </item>
+    
+      <item>
+        <title>Bloom Filter</title>
+        <description>&lt;p&gt;title: Bloom Filter
+link: https://brianchan.us/home/2016/08/01/bloom-filter/
+author: admin
+description: 
+post_id: 4341
+created: 2016/08/01 23:40:36
+created_gmt: 2016/08/02 06:40:36
+comment_status: open
+post_name: bloom-filter
+status: publish
+post_type: post&lt;/p&gt;
+
+&lt;h1 id=&quot;bloom-filter&quot;&gt;Bloom Filter&lt;/h1&gt;
+
+</description>
+        <pubDate>Mon, 01 Aug 2016 00:00:00 -0700</pubDate>
+        <link>http://127.0.0.1:4000//2016/08/01/bloom-filter/</link>
+        <guid isPermaLink="true">http://127.0.0.1:4000//2016/08/01/bloom-filter/</guid>
+      </item>
+    
+      <item>
+        <title>Refinance Calculator</title>
+        <description>&lt;p&gt;title: Refinance Calculator
+link: https://brianchan.us/home/2016/07/23/refinance-calculator/
+author: admin
+description: 
+post_id: 4337
+created: 2016/07/23 10:35:42
+created_gmt: 2016/07/23 17:35:42
+comment_status: open
+post_name: refinance-calculator
+status: publish
+post_type: post&lt;/p&gt;
+
+&lt;h1 id=&quot;refinance-calculator&quot;&gt;Refinance Calculator&lt;/h1&gt;
+
+&lt;p&gt;I found this very good refinance calculator from zillow.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 23 Jul 2016 00:00:00 -0700</pubDate>
+        <link>http://127.0.0.1:4000//2016/07/23/refinance-calculator/</link>
+        <guid isPermaLink="true">http://127.0.0.1:4000//2016/07/23/refinance-calculator/</guid>
+      </item>
+    
+      <item>
+        <title>Reattach Terminal Process X11 Restarted</title>
+        <description>&lt;p&gt;title: Reattach to a terminal process when x11 is restarted
+link: https://brianchan.us/home/2016/07/22/reattach-terminal-process-x11-restarted/
+author: admin
+description: 
+post_id: 4332
+created: 2016/07/22 13:27:39
+created_gmt: 2016/07/22 20:27:39
+comment_status: open
+post_name: reattach-terminal-process-x11-restarted
+status: publish
+post_type: post&lt;/p&gt;
+
+&lt;h1 id=&quot;reattach-to-a-terminal-process-when-x11-is-restarted&quot;&gt;Reattach to a terminal process when x11 is restarted&lt;/h1&gt;
+
+&lt;p&gt;Let me describe my case. I was running 4 long commands in 4 terminals. They were all splitting out log files to stdout so I could see the progress. Then all of a sudden I found my X11 frozen. I thought it would just go away when my tasks became less busy. But after like an hour I decided that I needed to do something since my screen was still frozen. I grabbed my laptop and ssh’ed to my box and found the 4 tasks still running, so the system is ok. Then I had no choice but to restart my display session. I did:&lt;/p&gt;
+</description>
+        <pubDate>Fri, 22 Jul 2016 00:00:00 -0700</pubDate>
+        <link>http://127.0.0.1:4000//2016/07/22/reattach-terminal-process-x11-restarted/</link>
+        <guid isPermaLink="true">http://127.0.0.1:4000//2016/07/22/reattach-terminal-process-x11-restarted/</guid>
+      </item>
+    
+      <item>
+        <title>Pokemon</title>
+        <description>&lt;p&gt;title: Pokemon
+link: https://brianchan.us/home/2016/07/16/pokemon/
+author: admin
+description: 
+post_id: 4325
+created: 2016/07/16 00:26:40
+created_gmt: 2016/07/16 07:26:40
+comment_status: open
+post_name: pokemon
+status: publish
+post_type: post&lt;/p&gt;
+
+&lt;h1 id=&quot;pokemon&quot;&gt;Pokemon&lt;/h1&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgflip.com/178idc.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sat, 16 Jul 2016 00:00:00 -0700</pubDate>
+        <link>http://127.0.0.1:4000//2016/07/16/pokemon/</link>
+        <guid isPermaLink="true">http://127.0.0.1:4000//2016/07/16/pokemon/</guid>
+      </item>
+    
+      <item>
+        <title>Admob Responsive Ads For Wordpress</title>
+        <description>&lt;p&gt;title: Admob Responsive Ads for Wordpress
+link: https://brianchan.us/home/2016/07/14/admob-responsive-ads-for-wordpress/
+author: admin
+description: 
+post_id: 4314
+created: 2016/07/14 23:18:32
+created_gmt: 2016/07/15 06:18:32
+comment_status: open
+post_name: admob-responsive-ads-for-wordpress
+status: publish
+post_type: post&lt;/p&gt;
+
+&lt;h1 id=&quot;admob-responsive-ads-for-wordpress&quot;&gt;Admob Responsive Ads for Wordpress&lt;/h1&gt;
+
+&lt;p&gt;I was looking around for proper ways to place google’s admob responsive ads onto my wordpress blog site. I found a few plugins here and there but wasn’t too sure. Then I found the google official plugin:&lt;/p&gt;
+</description>
+        <pubDate>Thu, 14 Jul 2016 00:00:00 -0700</pubDate>
+        <link>http://127.0.0.1:4000//2016/07/14/admob-responsive-ads-for-wordpress/</link>
+        <guid isPermaLink="true">http://127.0.0.1:4000//2016/07/14/admob-responsive-ads-for-wordpress/</guid>
+      </item>
+    
+      <item>
+        <title>Importerror No Module Named Mysqldb</title>
+        <description>&lt;p&gt;title: ImportError: No module named MySQLdb
+link: https://brianchan.us/home/2016/06/28/importerror-no-module-named-mysqldb/
+author: admin
+description: 
+post_id: 4309
+created: 2016/06/28 21:10:04
+created_gmt: 2016/06/29 04:10:04
+comment_status: open
+post_name: importerror-no-module-named-mysqldb
+status: publish
+post_type: post&lt;/p&gt;
+
+&lt;h1 id=&quot;importerror-no-module-named-mysqldb&quot;&gt;ImportError: No module named MySQLdb&lt;/h1&gt;
+
+&lt;p&gt;I was trying to run GAE dev_appserver.py on my osx El Capitan, and kept getting that ImportError. I fixed it by&lt;/p&gt;
+</description>
+        <pubDate>Tue, 28 Jun 2016 00:00:00 -0700</pubDate>
+        <link>http://127.0.0.1:4000//2016/06/28/importerror-no-module-named-mysqldb/</link>
+        <guid isPermaLink="true">http://127.0.0.1:4000//2016/06/28/importerror-no-module-named-mysqldb/</guid>
+      </item>
+    
+      <item>
+        <title>How To Install Octave On Os X</title>
+        <description>&lt;p&gt;title: How to install Octave on OS X
+link: https://brianchan.us/home/2016/06/09/how-to-install-octave-on-os-x/
+author: admin
+description: 
+post_id: 4299
+created: 2016/06/09 23:17:30
+created_gmt: 2016/06/10 06:17:30
+comment_status: open
+post_name: how-to-install-octave-on-os-x
+status: publish
+post_type: post&lt;/p&gt;
+
+&lt;h1 id=&quot;how-to-install-octave-on-os-x&quot;&gt;How to install Octave on OS X&lt;/h1&gt;
+
+&lt;p&gt;I am taking Andrew Ng’s &lt;a href=&quot;https://www.coursera.org/learn/machine-learning/&quot;&gt;Stanford Machine Learning Class&lt;/a&gt;. It is required to install octave for the class assignments.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 09 Jun 2016 00:00:00 -0700</pubDate>
+        <link>http://127.0.0.1:4000//2016/06/09/how-to-install-octave-on-os-x/</link>
+        <guid isPermaLink="true">http://127.0.0.1:4000//2016/06/09/how-to-install-octave-on-os-x/</guid>
       </item>
     
   </channel>

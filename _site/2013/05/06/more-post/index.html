@@ -25,15 +25,13 @@
 <!-- - -->
 <script type='text/javascript'>
   //<![CDATA[
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', '']);
-    _gaq.push(['_trackPageview']);
-    
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-93309234-1', 'auto');
+    ga('send', 'pageview');
   //]]>
 </script>
 <script>(function(d, s, id) {
@@ -97,29 +95,29 @@
           <p>I am a placeholder post. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
 
 <blockquote>
-<p>Boom. I am a blockquote.</p>
+  <p>Boom. I am a blockquote.</p>
 
-<p>Say something really clever here.</p>
+  <p>Say something really clever here.</p>
 </blockquote>
 
 <ol>
-<li>List with code</li>
+  <li>List with code</li>
 </ol>
-<div class="highlight"><pre><code class="language-text" data-lang="text">  not highlighted
+
+<p><code>
+  not highlighted
   multi line
-</code></pre></div>
-<ol>
-<li>List with code
-<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">dom</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;boom&#39;</span><span class="p">)</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">dom</span><span class="p">);</span></code></pre></div></li>
-</ol>
+ </code>
+2. List with code
+&lt;div class="highlight"&gt;&lt;pre&gt;<code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">dom</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">'boom'</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">dom</span><span class="p">);</span></code>&lt;/pre&gt;&lt;/div&gt;</p>
 
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
 
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
 
 <div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">whaaa</span>
-  <span class="nb">puts</span> <span class="s2">&quot;I have a friend called Bobobmob.&quot;</span>
+  <span class="nb">puts</span> <span class="s2">"I have a friend called Bobobmob."</span>
 <span class="k">end</span></code></pre></div>
 
           <br />

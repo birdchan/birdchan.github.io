@@ -1,7 +1,6 @@
 title:            Brian Chan's blog
 description:      Brian Chan's blog.
-#url:              https://birdchan.github.io/
-url:              http://127.0.0.1:4000/
+url:              https://birdchan.github.io/
 signoff:          # Your name.
 disqus_shortname: # disqus comment thread for post header options. ( leave blank if unwanted. )
 facebook_appid:   # appid for like button, remove from /_includes/share.html if unwanted.

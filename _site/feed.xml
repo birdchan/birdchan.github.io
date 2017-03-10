@@ -3,30 +3,36 @@
   <channel>
     <title>Brian Chan's blog</title>
     <description>Brian Chan's blog.</description>
-    <link>http://127.0.0.1:4000/</link>
-    <atom:link href="http://127.0.0.1:4000//feed.xml" rel="self" type="application/rss+xml" />
+    <link>https://birdchan.github.io/</link>
+    <atom:link href="https://birdchan.github.io//feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
-        <title>Fix Apache2 Upgrading Ubuntu 16</title>
-        <description>&lt;p&gt;title: Fix apache2 after upgrading to ubuntu 16
-link: https://brianchan.us/home/2016/10/16/fix-apache2-upgrading-ubuntu-16/
-author: admin
-description: 
-post_id: 4357
-created: 2016/10/16 16:01:07
-created_gmt: 2016/10/16 23:01:07
-comment_status: open
-post_name: fix-apache2-upgrading-ubuntu-16
-status: publish
-post_type: post&lt;/p&gt;
+        <title>Fix apache2 after upgrading to ubuntu 16</title>
+        <description>&lt;p&gt;After upgrading to ubuntu 16, my wordpress was acting weird. I get errors like &lt;strong&gt;apache2.service – LSB: Apache2 web server Loaded: loaded (/etc/init.d/apache2; bad; vendor preset: enabled) Drop-In: /lib/systemd/system/apache2.service.d └─apache2-systemd.conf Active: failed (Result: exit-code)&lt;/strong&gt;, and &lt;strong&gt;Your PHP installation appears to be missing the MySQL extension which is required by WordPress.&lt;/strong&gt;&lt;/p&gt;
 
-&lt;h1 id=&quot;fix-apache2-after-upgrading-to-ubuntu-16&quot;&gt;Fix apache2 after upgrading to ubuntu 16&lt;/h1&gt;
+&lt;p&gt;Here are some of the steps I took to re-enabled my blog.
+If you are using php 7.0, then do&lt;/p&gt;
 
-&lt;p&gt;After upgrading to ubuntu 16, my wordpress was acting weird. I get errors like &lt;strong&gt;apache2.service - LSB: Apache2 web server Loaded: loaded (/etc/init.d/apache2; bad; vendor preset: enabled) Drop-In: /lib/systemd/system/apache2.service.d └─apache2-systemd.conf Active: failed (Result: exit-code)&lt;/strong&gt;, and &lt;strong&gt;Your PHP installation appears to be missing the MySQL extension which is required by WordPress.&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo a2dismod php5
+sudo add-apt-repository ppa:ondrej/php
+sudo apt-get update
+sudo apt-get install php7.0
+sudo apt-get install php7.0-mysql
+sudo a2enmod php7.0
+sudo systemctl restart apache2
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Then then your blog should get back up, but for me all of my blog post content are missing. I still can see the post content in the editor, but not on the webpage. It turns out some of the plugins were not up-to-date yet. So turn on/off and update your plugins and at the end your posts should get back to normal.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;ref:&lt;/strong&gt;
+&lt;a href=&quot;https://www.digitalocean.com/community/tutorials/how-to-install-wordpress-with-lamp-on-ubuntu-16-04&quot;&gt;https://www.digitalocean.com/community/tutorials/how-to-install-wordpress-with-lamp-on-ubuntu-16-04&lt;/a&gt;
+&lt;a href=&quot;https://www.digitalocean.com/community/tutorials/how-to-upgrade-to-php-7-on-ubuntu-14-04&quot;&gt;https://www.digitalocean.com/community/tutorials/how-to-upgrade-to-php-7-on-ubuntu-14-04&lt;/a&gt;&lt;/p&gt;
+
 </description>
-        <pubDate>Sun, 16 Oct 2016 00:00:00 -0700</pubDate>
-        <link>http://127.0.0.1:4000//2016/10/16/fix-apache2-upgrading-ubuntu-16/</link>
-        <guid isPermaLink="true">http://127.0.0.1:4000//2016/10/16/fix-apache2-upgrading-ubuntu-16/</guid>
+        <pubDate>Sun, 16 Oct 2016 09:01:07 -0700</pubDate>
+        <link>https://birdchan.github.io//2016/10/16/fix-apache2-upgrading-ubuntu-16/</link>
+        <guid isPermaLink="true">https://birdchan.github.io//2016/10/16/fix-apache2-upgrading-ubuntu-16/</guid>
       </item>
     
       <item>
@@ -53,8 +59,8 @@ post_type: post&lt;/p&gt;
 
 </description>
         <pubDate>Sat, 24 Sep 2016 00:00:00 -0700</pubDate>
-        <link>http://127.0.0.1:4000//2016/09/24/will-iphone-7-or-7-plus-work-in-china/</link>
-        <guid isPermaLink="true">http://127.0.0.1:4000//2016/09/24/will-iphone-7-or-7-plus-work-in-china/</guid>
+        <link>https://birdchan.github.io//2016/09/24/will-iphone-7-or-7-plus-work-in-china/</link>
+        <guid isPermaLink="true">https://birdchan.github.io//2016/09/24/will-iphone-7-or-7-plus-work-in-china/</guid>
       </item>
     
       <item>
@@ -76,8 +82,8 @@ post_type: post&lt;/p&gt;
 &lt;p&gt;Reginald Braithwaite &lt;a href=&quot;https://github.com/raganwald/presentations/blob/master/optimism.md&quot;&gt;talked&lt;/a&gt; about a book called “Learned Optimism,” by Dr. Martin Seligman. Sounds interesting.&lt;/p&gt;
 </description>
         <pubDate>Wed, 17 Aug 2016 00:00:00 -0700</pubDate>
-        <link>http://127.0.0.1:4000//2016/08/17/learned-optimism/</link>
-        <guid isPermaLink="true">http://127.0.0.1:4000//2016/08/17/learned-optimism/</guid>
+        <link>https://birdchan.github.io//2016/08/17/learned-optimism/</link>
+        <guid isPermaLink="true">https://birdchan.github.io//2016/08/17/learned-optimism/</guid>
       </item>
     
       <item>
@@ -98,8 +104,8 @@ post_type: post&lt;/p&gt;
 
 </description>
         <pubDate>Mon, 01 Aug 2016 00:00:00 -0700</pubDate>
-        <link>http://127.0.0.1:4000//2016/08/01/bloom-filter/</link>
-        <guid isPermaLink="true">http://127.0.0.1:4000//2016/08/01/bloom-filter/</guid>
+        <link>https://birdchan.github.io//2016/08/01/bloom-filter/</link>
+        <guid isPermaLink="true">https://birdchan.github.io//2016/08/01/bloom-filter/</guid>
       </item>
     
       <item>
@@ -121,8 +127,8 @@ post_type: post&lt;/p&gt;
 &lt;p&gt;I found this very good refinance calculator from zillow.&lt;/p&gt;
 </description>
         <pubDate>Sat, 23 Jul 2016 00:00:00 -0700</pubDate>
-        <link>http://127.0.0.1:4000//2016/07/23/refinance-calculator/</link>
-        <guid isPermaLink="true">http://127.0.0.1:4000//2016/07/23/refinance-calculator/</guid>
+        <link>https://birdchan.github.io//2016/07/23/refinance-calculator/</link>
+        <guid isPermaLink="true">https://birdchan.github.io//2016/07/23/refinance-calculator/</guid>
       </item>
     
       <item>
@@ -144,8 +150,8 @@ post_type: post&lt;/p&gt;
 &lt;p&gt;Let me describe my case. I was running 4 long commands in 4 terminals. They were all splitting out log files to stdout so I could see the progress. Then all of a sudden I found my X11 frozen. I thought it would just go away when my tasks became less busy. But after like an hour I decided that I needed to do something since my screen was still frozen. I grabbed my laptop and ssh’ed to my box and found the 4 tasks still running, so the system is ok. Then I had no choice but to restart my display session. I did:&lt;/p&gt;
 </description>
         <pubDate>Fri, 22 Jul 2016 00:00:00 -0700</pubDate>
-        <link>http://127.0.0.1:4000//2016/07/22/reattach-terminal-process-x11-restarted/</link>
-        <guid isPermaLink="true">http://127.0.0.1:4000//2016/07/22/reattach-terminal-process-x11-restarted/</guid>
+        <link>https://birdchan.github.io//2016/07/22/reattach-terminal-process-x11-restarted/</link>
+        <guid isPermaLink="true">https://birdchan.github.io//2016/07/22/reattach-terminal-process-x11-restarted/</guid>
       </item>
     
       <item>
@@ -167,8 +173,8 @@ post_type: post&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://i.imgflip.com/178idc.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Sat, 16 Jul 2016 00:00:00 -0700</pubDate>
-        <link>http://127.0.0.1:4000//2016/07/16/pokemon/</link>
-        <guid isPermaLink="true">http://127.0.0.1:4000//2016/07/16/pokemon/</guid>
+        <link>https://birdchan.github.io//2016/07/16/pokemon/</link>
+        <guid isPermaLink="true">https://birdchan.github.io//2016/07/16/pokemon/</guid>
       </item>
     
       <item>
@@ -190,8 +196,8 @@ post_type: post&lt;/p&gt;
 &lt;p&gt;I was looking around for proper ways to place google’s admob responsive ads onto my wordpress blog site. I found a few plugins here and there but wasn’t too sure. Then I found the google official plugin:&lt;/p&gt;
 </description>
         <pubDate>Thu, 14 Jul 2016 00:00:00 -0700</pubDate>
-        <link>http://127.0.0.1:4000//2016/07/14/admob-responsive-ads-for-wordpress/</link>
-        <guid isPermaLink="true">http://127.0.0.1:4000//2016/07/14/admob-responsive-ads-for-wordpress/</guid>
+        <link>https://birdchan.github.io//2016/07/14/admob-responsive-ads-for-wordpress/</link>
+        <guid isPermaLink="true">https://birdchan.github.io//2016/07/14/admob-responsive-ads-for-wordpress/</guid>
       </item>
     
       <item>
@@ -213,8 +219,8 @@ post_type: post&lt;/p&gt;
 &lt;p&gt;I was trying to run GAE dev_appserver.py on my osx El Capitan, and kept getting that ImportError. I fixed it by&lt;/p&gt;
 </description>
         <pubDate>Tue, 28 Jun 2016 00:00:00 -0700</pubDate>
-        <link>http://127.0.0.1:4000//2016/06/28/importerror-no-module-named-mysqldb/</link>
-        <guid isPermaLink="true">http://127.0.0.1:4000//2016/06/28/importerror-no-module-named-mysqldb/</guid>
+        <link>https://birdchan.github.io//2016/06/28/importerror-no-module-named-mysqldb/</link>
+        <guid isPermaLink="true">https://birdchan.github.io//2016/06/28/importerror-no-module-named-mysqldb/</guid>
       </item>
     
       <item>
@@ -236,8 +242,8 @@ post_type: post&lt;/p&gt;
 &lt;p&gt;I am taking Andrew Ng’s &lt;a href=&quot;https://www.coursera.org/learn/machine-learning/&quot;&gt;Stanford Machine Learning Class&lt;/a&gt;. It is required to install octave for the class assignments.&lt;/p&gt;
 </description>
         <pubDate>Thu, 09 Jun 2016 00:00:00 -0700</pubDate>
-        <link>http://127.0.0.1:4000//2016/06/09/how-to-install-octave-on-os-x/</link>
-        <guid isPermaLink="true">http://127.0.0.1:4000//2016/06/09/how-to-install-octave-on-os-x/</guid>
+        <link>https://birdchan.github.io//2016/06/09/how-to-install-octave-on-os-x/</link>
+        <guid isPermaLink="true">https://birdchan.github.io//2016/06/09/how-to-install-octave-on-os-x/</guid>
       </item>
     
   </channel>

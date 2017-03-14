@@ -2,6 +2,7 @@
 layout: post
 title: iTunes Connect Screenshot Size
 created: 2015/07/06 23:43:31
+comments: true
 ---
 
 Just to re-post this.

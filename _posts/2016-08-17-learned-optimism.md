@@ -2,6 +2,7 @@
 layout: post
 title: Learned Optimism
 date: 2016-08-17 08:53:21
+comments: true
 ---
 
 Reginald Braithwaite [talked](https://github.com/raganwald/presentations/blob/master/optimism.md) about a book called "Learned Optimism," by Dr. Martin Seligman. Sounds interesting.

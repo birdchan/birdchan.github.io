@@ -2,6 +2,7 @@
 layout: post
 title: Refinance Calculator
 date: 2016-07-23 10:35:42
+comments: true
 ---
 
 I found this very good refinance calculator from zillow.

@@ -2,6 +2,7 @@
 layout: post
 title: How to install Octave on OS X
 date: 2016/06/09 23:17:30
+comments: true
 ---
 
 I am taking Andrew Ng's [Stanford Machine Learning Class](https://www.coursera.org/learn/machine-learning/). It is required to install octave for the class assignments.

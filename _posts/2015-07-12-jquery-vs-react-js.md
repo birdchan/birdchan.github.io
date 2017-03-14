@@ -2,6 +2,7 @@
 layout: post
 title: jQuery vs React.js
 date: 2015/07/12 23:51:50
+comments: true
 ---
 
 Coming from a jquery background, I really like this article which highlights the strength of React.js.

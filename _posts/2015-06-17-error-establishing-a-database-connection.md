@@ -2,6 +2,7 @@
 layout: post
 title: Error establishing a database connection
 created: 2015/06/17 16:39:46
+comments: true
 ---
 
 Try this:
